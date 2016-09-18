@@ -19,13 +19,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.zlzkj.app.model.Pic;
-import com.zlzkj.app.model.Point;
-import com.zlzkj.app.model.Target;
+
 import com.zlzkj.app.model.User;
 import com.zlzkj.app.service.PicService;
 import com.zlzkj.app.service.UserService;
-import com.zlzkj.app.service.TargetService;
-import com.zlzkj.app.service.PointService;
 import com.zlzkj.app.util.MD5String;
 import com.zlzkj.app.util.StringUtil;
 import com.zlzkj.app.util.UploadUtils;
@@ -42,12 +39,7 @@ public class UserController extends BaseController{
 	
 	@Autowired
 	private PicService picService;
-	
-	@Autowired
-	private PointService PointService;
-	
-	@Autowired
-	private TargetService TargetService;
+
 	
 	@RequestMapping(value={"savepic"},method=RequestMethod.POST)
 	public String info(Model model,HttpServletRequest request,HttpServletResponse response

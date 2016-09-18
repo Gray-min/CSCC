@@ -49,7 +49,7 @@
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		
-		<table tableName="x_action_node" domainObjectName="ActionNode"
+		<table tableName="x_location" domainObjectName="Location"
 			enableCountByExample="false" enableUpdateByExample="false"
 			enableDeleteByExample="false" enableSelectByExample="false"
 			selectByExampleQueryId="false"></table>
